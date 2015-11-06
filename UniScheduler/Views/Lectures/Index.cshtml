@@ -1,0 +1,47 @@
+﻿@model System.Collections.Generic.IEnumerable<UniScheduler.Models.CourseLecturesModel>
+
+@{
+    ViewBag.Title = "CourseLecture";
+}
+
+<h2>CourseLecture</h2>
+<table>
+
+    @foreach(var lecture in Model)
+    {
+        <tr>
+                   
+            <td>
+               
+                @lecture.Id
+            </td>
+                  
+            <td>
+           
+                @lecture.Name
+            </td>
+            
+            <td>
+                @lecture.Ids
+            </td>
+            <td> 
+                @lecture.FirstName
+            </td>
+            <td>@lecture.MiddleName</td>
+            <td>@lecture.LastName</td>
+
+            <td>
+            @lecture.Phone</td>
+            <td>
+                @lecture.Time
+            </td>
+            <td>
+                @lecture.Room
+            </td>
+        </tr>
+    }
+
+</table>
+
+
+
